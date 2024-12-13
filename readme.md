@@ -1,5 +1,3 @@
-npm i ioredis
-
 # Redis Integration Example
 
 This repository demonstrates how to integrate Redis into a Node.js application using the `ioredis` client. Redis is an in-memory data structure store commonly used as a database, cache, and message broker.
