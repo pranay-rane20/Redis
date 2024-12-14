@@ -5,11 +5,6 @@ const Redis = require('ioredis')
 require('dotenv').config()
 
 
-
-
-// redis-14445.c301.ap-south-1-1.ec2.redns.redis-cloud.com:14445
-// nVUI1wi0lkEKVgOxjUwkSlQ1BmCGNgZd
-
 const redis = new Redis({
     host:process.env.HOST,
     port:process.env.PORT,
@@ -34,10 +29,7 @@ app.get('/create-ride',async (req,res)=>{
 
     redis.set('indra&MP',JSON.stringify(data))
 
-    res.send(data);
-
-
-    
+    res.send(data);   
 })
 
 app.listen(3000, () => {
