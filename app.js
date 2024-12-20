@@ -32,6 +32,7 @@ app.get('/create-ride',async (req,res)=>{
     res.send(data);   
 })
 
+
 app.listen(3000, () => {
     console.log(`Server is running http://localhost:3000`);
 });
